@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" href="">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -17,6 +18,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="css/main.css" rel="stylesheet">
+    <link href="lib/Swiper-3.3.1/dist/css/swiper.min.css" rel="stylesheet">
 
   </head>
   <body>
@@ -29,13 +31,41 @@
         <div class="container-fluid" id="header-navbar-wrapper">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" id="nav-logo" href="#">seedoftime</a>
+            <div id="toggle-buttons" data-hidden="true">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <a class="navbar-brand" id="nav-logo" href="#"></a>
+
+            <div id="login-form">
+           
+                <form action="/" >
+                  
+                  <ul class="list-unstyled text-right" id="help-nav">
+                    <li><a href="#" class="current-page">Главная</a></li>
+                    <li><a href="#">Заведения</a></li>
+                    <li><a href="#">Обратная связь</a></li>
+                    <li><a href="#">Условия размещения</a></li>
+                    <li><a href="#">О нас</a></li>
+                  </ul>
+
+                  <ul class="list-unstyled">
+                    <li>ВХОД</li>
+                    <li>(( Регистрация ))</li>
+                  </ul>
+
+                  <input type="login" name="login" placeholder="Логин">
+                  <input type="password" name="password" placeholder="Пароль">
+                  <div id="vk">
+                    
+                  </div>
+                  <div id="face">
+                   
+                  </div>
+                  <button type="submit" class="pull-right">войти</button>
+                </form>
+              
+              </div>
           </div>
       
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,189 +79,194 @@
               <li><a href="#">О нас</a></li>
               <li><a href="#">Вход/Регистрация</a></li>
             </ul>
-
+            
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
 
 
-      <div id="search">
+      <div id="search" data-parallax='{"y":"30%"}'>
         <img src="image/main-logo.png">
         <span>Найдите свое заведение сейчас</span>
         <label> <input type="text"> </label>
         <span>Пример: суши в центре Минска</span>
       </div>
 
+      <img src="image/mouse.png" alt="mouse" id="header-mouse">
+
     </div>
 
     <div class="container-fluid text-center" id="top-place"> 
-        <h4 class="category"> топ заведений</h4>
+        <h4 class="text-center text-decoration"> 
+          <img src="image/leftDec.png" alt="dec">
+          <span>топ заведений</span>
+          <img src="image/rightDec.png" alt="dec">
+        </h4>
+        <img src="image/prev.png" alt="prev" class="top-slider-before" id="top-befor">
+        <div class="swiper-container" id="top-place-slider"> 
+  
 
-        <div class="container-fluid" id="top-place-slider"> 
+          <div class="swiper-wrapper">
 
-          <div id="top-place-slider-before"> < </div>
+            <div class=" slide swiper-slide"> 
+              <div class="slide-wrapper">
+                  <img src="image/top-place-1.jpg">
+                  <span class="name"> Ресторан "Лачуга"</span><br/>
+                  <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+              </div>
+            </div>
 
-          <div class="col-sm-3 col-xs-6 slide"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+            <div class="slide swiper-slide"> 
+              <div class="slide-wrapper">
+                  <img src="image/top-place-1.jpg">
+                  <span class="name"> Ресторан "Лачуга"</span><br/>
+                  <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3 col-xs-6 slide"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+
+            <div class="slide swiper-slide"> 
+              <div class="slide-wrapper">
+                  <img src="image/top-place-1.jpg">
+                  <span class="name"> Ресторан "Лачуга"</span><br/>
+                  <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3 col-xs-6 slide"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+
+            <div class="slide swiper-slide"> 
+              <div class="slide-wrapper">
+                  <img src="image/top-place-1.jpg">
+                  <span class="name"> Ресторан "Лачуга"</span><br/>
+                  <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3 col-xs-6 slide"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+
+            <div class="slide swiper-slide"> 
+              <div class="slide-wrapper">
+                  <img src="image/top-place-1.jpg">
+                  <span class="name"> Ресторан "Лачуга"</span><br/>
+                  <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3 col-xs-6 slide"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+
+            <div class="slide swiper-slide"> 
+              <div class="slide-wrapper">
+                  <img src="image/top-place-1.jpg">
+                  <span class="name"> Ресторан "Лачуга"</span><br/>
+                  <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3 col-xs-6 slide"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6 slide"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6 slide"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6 slide"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6 slide"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
-            </div>
+
           </div>
 
-          <div id="top-place-slider-after"> > </div>
-
+        
         </div>
+      <img src="image/next.png" alt="prev" class="top-slider-after" id="top-after">
     </div>
 
     <div class="container-fluid text-center" id="how-use"> 
         <h4>как пользоваться <span>seedoftime</span></h4>
         <i>~</i>
         <p>
-          -это веб-сервис, который дает вам возможность бронировать места и делать заказ еды до вашего прихода туда. Вам больше не нужно тратить время на ожидание выполнения заказов еды и искать удобные для Вас заведения. Просто бодьте с SEEDOFTIME
         </p>
         <i>~</i>
         <div class="col-sm-4">
-            <img src="image/use_1.jpg">
+            <img src="image/use_1.png">
             <p>Перейдите на вкладку ЗАВЕДЕНИЯ или воспользуйтесь быстрым поиском</p>
         </div>
         <div class="col-sm-4">
-            <img src="image/use_2.jpg">
+            <img src="image/use_2.png">
             <p>Используйте различные критерии поиска, чтобы найти то, что Вам нужно</p>
         </div>
         <div class="col-sm-4">
-            <img src="image/use_3.jpg">
+            <img src="image/use_3.png">
             <p>Бронируйте места в выбранном заведении и заказывайте еду заранее</p>
         </div>
     </div>
 
     <div class="container-fluid text-center" id="news">  
-        <h4>новости</h4>
+        <h4>
+        <img src="image/leftDec.png" alt="dec">
+        новости
+        <img src="image/rightDec.png" alt="dec">
+        </h4>
+        <img src="image/prev.png" alt="prev" class="top-slider-before" id="news-befor">
 
-        <div class="col-sm-3">
-          <h4>Куда сходить на свидание?</h4>
-          <p>
-            Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
-          </p>
+        <div class=" swiper-container" id="news-slider"> 
+        <div class="swiper-wrapper text-left">
+
+          <div class="swiper-slide news-slid">
+            <h4>Куда сходить на свидание?</h4>
+            <p>
+              Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+            </p>
+          </div>
+          <div class="swiper-slide news-slid">
+            <h4>Куда сходить на свидание?</h4>
+            <p>
+              Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+            </p>
+          </div>
+          <div class="swiper-slide news-slid">
+            <h4>Куда сходить на свидание?</h4>
+            <p>
+              Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+            </p>
+          </div>
+          <div class="swiper-slide news-slid">
+            <h4>Куда сходить на свидание?</h4>
+            <p>
+              Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+            </p>
+          </div>
+
+          </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Куда сходить на свидание?</h4>
-          <p>
-            Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
-          </p>
-        </div>
-        <div class="col-sm-3">
-          <h4>Куда сходить на свидание?</h4>
-          <p>
-            Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
-          </p>
-        </div>
-        <div class="col-sm-3">
-          <h4>Куда сходить на свидание?</h4>
-          <p>
-            Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
-          </p>
-        </div>
-        
+        <img src="image/next.png" alt="prev" class="top-slider-after" id="news-after">
+        <div id="news-button">Все Новости</div>
     </div>
 
     <div class="container-fluid text-center" id="recommendation">  
-        <h4>рекомендуем</h4>
-        <div id="top-place-slider-before"> < </div>
+        <h4>
+          <img src="image/leftDec.png" alt="dec">
+          рекомендуем
+          <img src="image/rightDec.png" alt="dec">
+        </h4>
+        <img src="image/prev.png" alt="prev" class="top-slider-before" id="rec-befor">
 
-          <div class="col-sm-3 col-xs-6"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6"> 
-            <div class="slide-wrapper">
-                <img src="image/top-place-1.jpg">
-                <span class="name"> Ресторан "Лачуга"</span><br/>
-                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
-            </div>
-          </div>
+       <div class=" swiper-container" id="recommendation-slider">         
 
-          <div id="top-place-slider-after"> > </div>
+         <div class="swiper-wrapper">
+          <div class="slide swiper-slide"> 
+            <div class="slide-wrapper">
+                <img src="image/top-place-1.jpg">
+                <span class="name"> Ресторан "Лачуга"</span><br/>
+                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide"> 
+            <div class="slide-wrapper">
+                <img src="image/top-place-1.jpg">
+                <span class="name"> Ресторан "Лачуга"</span><br/>
+                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide"> 
+            <div class="slide-wrapper">
+                <img src="image/top-place-1.jpg">
+                <span class="name"> Ресторан "Лачуга"</span><br/>
+                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide"> 
+            <div class="slide-wrapper">
+                <img src="image/top-place-1.jpg">
+                <span class="name"> Ресторан "Лачуга"</span><br/>
+                <span class="description"> на берегу моря, французкая кухня, кальянная...</span>
+            </div>
+          </div>
+        </div>
+       </div> 
+      <img src="image/next.png" alt="prev" class="top-slider-after" id="rec-after">
     </div>  
 
     <footer class="container-fluid" id="footer" style="hei">  
@@ -242,6 +277,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/Swiper-3.3.1/dist/js/swiper.jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/8bb910b329.js"></script>
+    <script src="lib/jquery-data-parallax/jquery.data-parallax.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
